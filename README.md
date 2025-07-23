@@ -1,5 +1,21 @@
-# Estudos - API com Node.js e Banco de Dados MONGO DB
+# Estudos - API Gerenciar Usuários com Node.js e MONGO DB
 
-# Principais comandos
+API para cadastrar, alterar, listar, consultar e deletar usuários.
 
-npm init -y
+# Tecnologias utilizadas
+
+- [Node.js](https://nodejs.org/pt)
+- [Framework para Node.js: ***express***](https://www.npmjs.com/package/express)
+- [Lib para acessar MongoDB: ***Prisma***](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb)
+- [MongoDB _on-line_](https://account.mongodb.com/account/login)
+
+# Comandos
+
+Iniciar API
+
+````bash
+node --watch server.js
+````
+
+
+# Anotações

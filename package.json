@@ -1,0 +1,19 @@
+{
+  "name": "api-cadastro-de-usuarios",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "npm init -y",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bruno Rojo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.12.0"
+  }
+}
