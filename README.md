@@ -17,5 +17,13 @@ Iniciar API
 node --watch server.js
 ````
 
+Iniciar Prisma Studio
+````bash
+npx prisma studio
+````
 
 # Anotações
+
+DB: UsersDB
+Username: temp
+Passwd: M4PE0eb5b6LWa5lT
