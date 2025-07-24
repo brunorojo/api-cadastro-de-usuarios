@@ -1,6 +1,6 @@
 # Estudos - API Gerenciar Usuários com Node.js e MONGO DB
 
-Simples API com as rotas para Cadastrar, Alterar, Listar e Deletar usuários.   
+Simples API com as rotas para Cadastrar, Alterar, Listar e Deletar usuários.
 
 > A collection para _Insomnia_ com os requests esta na pasta ***InsomniaCollection***
 
@@ -8,12 +8,14 @@ Simples API com as rotas para Cadastrar, Alterar, Listar e Deletar usuários.
 
 - [Node.js v22.17.1](https://nodejs.org/en/blog/release/v22.17.1)
 - [Express v5.1.0 _(Web Framework para Node.js)_](https://www.npmjs.com/package/express)
-- [Prisma v6.12.0 _(Lib para MongoDB)_](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb)
+- [Prisma v6.12.0 _(Lib para
+  MongoDB)_](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb)
 - [MongoDB _(cloud)_](https://account.mongodb.com/account/login)
 
 # Configurar e iniciar API localmente
 
-> Configurar a connection string no arquivo _.env_ para acesso a  base de dados, para isso acessar o MongoDB on-line, criar uma conta, criar uma base de dados e criar um usuário e senha.
+> Configurar a connection string no arquivo _.env_ para acesso a base de dados, para isso acessar o MongoDB on-line,
+> criar uma conta, criar uma base de dados e criar um usuário e senha.
 
 Instalar dependências
 
@@ -52,6 +54,19 @@ curl --request POST \
 }'
 ````
 
+### CURL Alterar Usuário
+
+````curl
+curl --request PUT \
+  --url http://localhost:3000/usuarios/6882598bd96d05c2f3f98ef1 \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"name": "San Ollie Paul",
+	"email": "San.Ollie.Paul@maygolp.mqq.rt",
+	"phone": "619-695-4563 x70231"
+}'
+````
+
 ### CURL Listar Usuários (Query params opcionais: [id|name|email|phone])
 
 ````curl
@@ -59,7 +74,7 @@ curl --request GET \
 --url 'http://localhost:3000/usuarios?name=Addamms'
 ```` 
 
-### CURL Deletar Usuário por Id
+### CURL Deletar Usuário
 
 ````curl
 curl --request DELETE \
