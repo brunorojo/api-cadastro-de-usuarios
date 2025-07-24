@@ -1,0 +1,156 @@
+type: collection.insomnia.rest/5.0
+name: Gerenciar Usuários
+meta:
+  id: wrk_62725521f2d94ff7a2f5811a9eb0defe
+  created: 1753301220763
+  modified: 1753381473391
+  description: ""
+collection:
+  - url: localhost:3000/usuarios
+    name: Cadastrar Usuário
+    meta:
+      id: req_2051d842d04148898b3c3896b4cb1215
+      created: 1753301932519
+      modified: 1753375774033
+      isPrivate: false
+      description: ""
+      sortKey: -1751539426197.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "{% faker 'randomFirstName' %}",
+        	"email": "{% faker 'randomEmail' %}",
+        	"phone": "{% faker 'randomPhoneNumber' %}"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_80f2256b5fc240f2ac20b6a5fa657705
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/usuarios
+    name: Listar Usuários
+    meta:
+      id: req_646607aab1c449fcade3fc3e7266e681
+      created: 1753375551175
+      modified: 1753381391697
+      isPrivate: false
+      description: ""
+      sortKey: -1751539426247.5
+    method: GET
+    parameters:
+      - id: pair_d000fda7abcf4ee0a677c180519554f3
+        name: id
+        value: 6882598dd96d05c2f3f98ef4
+        description: ""
+        disabled: false
+      - id: pair_d03dd97975044f1fa3b01a881505551f
+        name: name
+        value: John
+        description: ""
+        disabled: true
+      - id: pair_1d4ccc014f7543e79efebccf877fefc6
+        name: email
+        value: mrs-paul@yalyal.yzd
+        description: ""
+        disabled: true
+      - id: pair_ec2ea4031c994831bd298e1ea4ba6876
+        name: phone
+        value: (388) 699-8651 x76715
+        description: ""
+        disabled: true
+    headers:
+      - id: pair_03e3b68c8bc24654877986c1d7003644
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/usuarios/6882598bd96d05c2f3f98ef1
+    name: Alterar Usuário
+    meta:
+      id: req_a8dde9a4ea03445393a70d2747e44585
+      created: 1753375596744
+      modified: 1753375842616
+      isPrivate: false
+      description: ""
+      sortKey: -1751539426147.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "{% faker 'randomFirstName' %}",
+        	"email": "{% faker 'randomEmail' %}",
+        	"phone": "{% faker 'randomPhoneNumber' %}"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_80f2256b5fc240f2ac20b6a5fa657705
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/usuarios/6882598cd96d05c2f3f98ef3
+    name: Deletar Usuário
+    meta:
+      id: req_e7ec67e3b4134193b662affd9681010d
+      created: 1753377079947
+      modified: 1753377410314
+      isPrivate: false
+      description: ""
+      sortKey: -1750658523526.75
+    method: DELETE
+    headers:
+      - id: pair_a035e444a69245418fa51d142c90fa2b
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d92ab307b1ead0a7d23305bde5c01afbcc4aaac5
+    created: 1753301220772
+    modified: 1753303852807
+environments:
+  name: Base Environment
+  meta:
+    id: env_d92ab307b1ead0a7d23305bde5c01afbcc4aaac5
+    created: 1753301220768
+    modified: 1753303852809
+    isPrivate: false

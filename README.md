@@ -1,13 +1,15 @@
 # Estudos - API Gerenciar Usuários com Node.js e MONGO DB
 
-API com rotas para Cadastrar, Alterar, Listar, Consultar e Deletar usuários.
+Simples API com as rotas para Cadastrar, Alterar, Listar e Deletar usuários.   
+
+> A collection para _Insomnia_ com os requests esta na pasta ***InsomniaCollection***
 
 # Tecnologias utilizadas
 
-- [Node.js](https://nodejs.org/pt)
-- [Framework para Node.js: ***express***](https://www.npmjs.com/package/express)
-- [Lib para acessar MongoDB: ***Prisma***](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb)
-- [MongoDB _on-line_](https://account.mongodb.com/account/login)
+- [Node.js v22.17.1](https://nodejs.org/en/blog/release/v22.17.1)
+- [Express v5.1.0 _(Web Framework para Node.js)_](https://www.npmjs.com/package/express)
+- [Prisma v6.12.0 _(Lib para MongoDB)_](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb)
+- [MongoDB _(cloud)_](https://account.mongodb.com/account/login)
 
 # Configurar e iniciar API localmente
 
