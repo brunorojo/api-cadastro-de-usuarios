@@ -1,6 +1,6 @@
 # Estudos - API Gerenciar Usuários com Node.js e MONGO DB
 
-API para cadastrar, alterar, listar, consultar e deletar usuários.
+API com ratas para Cadastrar, Alterar, Listar, Consultar e Deletar usuários.
 
 # Tecnologias utilizadas
 
@@ -35,6 +35,26 @@ Iniciar API na porta padrão 3000
 
 ````bash
 node --watch server.js
+````
+
+### CURL Cadastrar Usuário
+
+````curl
+curl --request POST \
+--url http://localhost:3000/usuarios \
+--header 'Content-Type: application/json' \
+--data '{
+"name": "Bruno",
+"email": "bruno.post@post.emayll.us.en",
+"phone": "99.12345-1234"
+}'
+````
+
+### CURL Listar Usuários
+
+````curl
+curl --request GET \
+--url http://localhost:3000/usuarios
 ````
 
 # Anotações Gerais
