@@ -1,7 +1,9 @@
-# Node
-node_modules
-
 # IDEs
 **/.idea
 **/.vscode
-/generated/prisma
+
+# Node
+node_modules
+
+# Prisma
+/generated
