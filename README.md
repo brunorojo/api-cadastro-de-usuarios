@@ -37,8 +37,8 @@ Iniciar API na porta padrão 3000
 node --watch server.js
 ````
 
-# Anotações
+# Anotações Gerais
 
-DB: UsersDB
-Username: temp
+DB: UsersDB  
+Username: temp  
 
